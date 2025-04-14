@@ -2,6 +2,7 @@
 Project 351 is a project repository for the GNU Radio Companion Problem Set. 
 
 ## Software and Installation
+This project was created using GNU radio software. This is a free software development toolkit that can be downloaded [Here] (https://github.com/ryanvolz/radioconda?tab=readme-ov-file#Download:~:text=MacOSX%2Darm64.pkg-,Windows,radioconda%2DWindows%2Dx86_64.exe,-Install)
 
 ## Authors and Acknowledgments
 This project was completed by Hannah Driscoll and Jacob Hyman
