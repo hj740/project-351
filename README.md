@@ -18,3 +18,5 @@ This project when run, will display two graphs. The top display is the Time Doma
 
 ### Visuals
 Here are some visual images of the project in use with diffferent parameters chosen:
+
+image.png
