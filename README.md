@@ -7,7 +7,7 @@ This project was created using GNU radio software. This is a free software devel
 ## Authors and Acknowledgments
 This project was completed by Hannah Driscoll and Jacob Hyman. We would like to acknowledge Kristina Collins and David Kazdan for giving us a good grade.
 
-### Problem Description
+## Problem Description
 This project aims to simulate the Phase Lab previously completed for the class. The Phase Lab's main goal is to familiarize the user with signal phase and phase differences between signals. This project aimed to allow the user to vary the amplitude, frequency, and phase of a signal while seeing the time domain and phasor view in real time. 
 
 ### Problem Approach, Difficulties, and Solutions
@@ -19,4 +19,14 @@ This project when run, will display two graphs. The top display is the Time Doma
 ### Visuals
 Here are some visual images of the project in use with diffferent parameters chosen:
 
-image.png
+This is our flow diagram:
+![image](https://github.com/user-attachments/assets/1c6eec6e-d539-47c9-89b7-c2b4601f0df5)
+
+This is the graphs of the time and phase domain for where the frequency is set to 57.3 Hz, the Phase is set to zero, and the Amplitude is set to one:
+![image (1)](https://github.com/user-attachments/assets/4fd909bb-a924-4d66-82e0-6c4e5f09675b)
+
+In this graph the frequency is set to zero, the amplitude is set to one, and the phase is set to three. You can see that the phase dictates where the dot is located.
+![image (2)](https://github.com/user-attachments/assets/70ea3228-901f-4a8e-adf4-a622fd14d765)
+
+Moving the sliders allows you to adjust the phase, frequency, and amplitude to recreate these graphs
+
