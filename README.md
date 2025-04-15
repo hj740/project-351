@@ -8,7 +8,7 @@ This project was created using GNU radio software. This is a free software devel
 This project was completed by Hannah Driscoll and Jacob Hyman. We would like to acknowledge Kristina Collins and David Kazdan for giving us a good grade.
 
 ### Problem Description
-This project aims to simulate the Phase Lab previously completed for the class. The aim is that the user can vary the amplitude, frequency, and phase of a signal while seeing the time domain and phasor view in real time. 
+This project aims to simulate the Phase Lab previously completed for the class. The Phase Lab's main goal is to familiarize the user with signal phase and phase differences between signals. This project aimed to allow the user to vary the amplitude, frequency, and phase of a signal while seeing the time domain and phasor view in real time. 
 
 ### Problem Approach, Difficulties, and Solutions
 Our initial approach was to use the Signal Source connected to the GUI Time Sink block with a float signal to see the output. Then, variables were created to adjust the amplitude, frequency, and phase. We then changed the source to output a complex signal for the GUI Constellation Sink to correctly output the phase view. Due to this complex signal, we used a Complex to Float block to change the Signal Source's output to read the cosine signal with the GUI Time Sink. 
