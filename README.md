@@ -23,7 +23,8 @@ This is our flow diagram:
 ![image](https://github.com/user-attachments/assets/1c6eec6e-d539-47c9-89b7-c2b4601f0df5)
 
 This is the graphs of the time and phase domain for where the frequency is set to 57.3 Hz, the Phase is set to zero, and the Amplitude is set to one:
-![image (1)](https://github.com/user-attachments/assets/4fd909bb-a924-4d66-82e0-6c4e5f09675b)
+![Screenshot 2025-04-16 235021](https://github.com/user-attachments/assets/f9be1135-87c2-4b71-9760-dcdde1406f17)
+
 
 In this graph the frequency is set to zero, the amplitude is set to one, and the phase is set to three. You can see that the phase dictates where the dot is located.
 ![image (2)](https://github.com/user-attachments/assets/70ea3228-901f-4a8e-adf4-a622fd14d765)
