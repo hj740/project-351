@@ -27,7 +27,8 @@ This is the graphs of the time and phase domain for where the frequency is set t
 
 
 In this graph the frequency is set to zero, the amplitude is set to one, and the phase is set to three. You can see that the phase dictates where the dot is located.
-![image (2)](https://github.com/user-attachments/assets/70ea3228-901f-4a8e-adf4-a622fd14d765)
+![Screenshot 2025-04-16 235236](https://github.com/user-attachments/assets/b783230b-a3a5-4eff-b168-cefd2cd61358)
+
 
 Moving the sliders allows you to adjust the phase, frequency, and amplitude to recreate these graphs
 
