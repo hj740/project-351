@@ -33,6 +33,27 @@ options:
     state: enabled
 
 blocks:
+- name: Alpha
+  id: variable_qtgui_range
+  parameters:
+    comment: ''
+    gui_hint: ''
+    label: ''
+    min_len: '200'
+    orient: QtCore.Qt.Horizontal
+    rangeType: float
+    start: '0'
+    step: '0.1'
+    stop: '10'
+    value: '0'
+    widget: counter_slider
+  states:
+    bus_sink: false
+    bus_source: false
+    bus_structure: null
+    coordinate: [368, 744.0]
+    rotation: 0
+    state: enabled
 - name: Amplitude
   id: variable_qtgui_range
   parameters:
@@ -54,27 +75,6 @@ blocks:
     coordinate: [368, 472.0]
     rotation: 0
     state: enabled
-- name: Amplitude_0
-  id: variable_qtgui_range
-  parameters:
-    comment: ''
-    gui_hint: ''
-    label: ''
-    min_len: '200'
-    orient: QtCore.Qt.Horizontal
-    rangeType: float
-    start: '0'
-    step: '0.5'
-    stop: '10'
-    value: '1'
-    widget: counter_slider
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [752, 1152.0]
-    rotation: 0
-    state: disabled
 - name: Frequency
   id: variable_qtgui_range
   parameters:
@@ -85,38 +85,17 @@ blocks:
     orient: QtCore.Qt.Horizontal
     rangeType: float
     start: '0'
-    step: '1'
-    stop: '1000'
-    value: '50'
+    step: '0.1'
+    stop: '100'
+    value: '10'
     widget: counter_slider
   states:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [368, 336.0]
+    coordinate: [368, 344.0]
     rotation: 0
     state: enabled
-- name: Frequency_0
-  id: variable_qtgui_range
-  parameters:
-    comment: ''
-    gui_hint: ''
-    label: ''
-    min_len: '200'
-    orient: QtCore.Qt.Horizontal
-    rangeType: float
-    start: '0'
-    step: '0.1'
-    stop: '1000'
-    value: '50'
-    widget: counter_slider
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [752, 1016.0]
-    rotation: 0
-    state: disabled
 - name: Phase
   id: variable_qtgui_range
   parameters:
@@ -138,27 +117,6 @@ blocks:
     coordinate: [368, 608.0]
     rotation: 0
     state: enabled
-- name: Phase_0
-  id: variable_qtgui_range
-  parameters:
-    comment: ''
-    gui_hint: ''
-    label: ''
-    min_len: '200'
-    orient: QtCore.Qt.Horizontal
-    rangeType: float
-    start: '0'
-    step: '0.1'
-    stop: 2*3.14159265
-    value: '0'
-    widget: counter_slider
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [752, 1288.0]
-    rotation: 0
-    state: disabled
 - name: samp_rate
   id: variable
   parameters:
@@ -191,32 +149,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [352, 184.0]
+    coordinate: [352, 192.0]
     rotation: 0
     state: enabled
-- name: analog_sig_source_x_0_2_0
-  id: analog_sig_source_x
-  parameters:
-    affinity: ''
-    alias: ''
-    amp: Amplitude_0
-    comment: ''
-    freq: Frequency_0
-    maxoutbuf: '0'
-    minoutbuf: '0'
-    offset: '0'
-    phase: Phase_0
-    samp_rate: samp_rate
-    showports: 'False'
-    type: complex
-    waveform: analog.GR_COS_WAVE
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [736, 864.0]
-    rotation: 0
-    state: disabled
 - name: blocks_complex_to_float_0
   id: blocks_complex_to_float
   parameters:
@@ -230,31 +165,15 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [664, 224.0]
+    coordinate: [664, 232.0]
     rotation: 0
     state: enabled
-- name: blocks_complex_to_float_0_0
-  id: blocks_complex_to_float
-  parameters:
-    affinity: ''
-    alias: ''
-    comment: ''
-    maxoutbuf: '0'
-    minoutbuf: '0'
-    vlen: '1'
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1024, 928.0]
-    rotation: 0
-    state: disabled
 - name: qtgui_const_sink_x_1
   id: qtgui_const_sink_x
   parameters:
     affinity: ''
     alias: ''
-    alpha1: '1.0'
+    alpha1: '3'
     alpha10: '1.0'
     alpha2: '1.0'
     alpha3: '1.0'
@@ -338,72 +257,9 @@ blocks:
     bus_sink: false
     bus_source: false
     bus_structure: null
-    coordinate: [680, 412.0]
+    coordinate: [680, 420.0]
     rotation: 0
     state: enabled
-- name: qtgui_time_raster_sink_x_0
-  id: qtgui_time_raster_sink_x
-  parameters:
-    affinity: ''
-    alias: ''
-    alpha1: '1.0'
-    alpha10: '1.0'
-    alpha2: '1.0'
-    alpha3: '1.0'
-    alpha4: '1.0'
-    alpha5: '1.0'
-    alpha6: '1.0'
-    alpha7: '1.0'
-    alpha8: '1.0'
-    alpha9: '1.0'
-    axislabels: 'True'
-    color1: '0'
-    color10: '0'
-    color2: '0'
-    color3: '0'
-    color4: '0'
-    color5: '0'
-    color6: '0'
-    color7: '0'
-    color8: '0'
-    color9: '0'
-    comment: ''
-    grid: 'False'
-    gui_hint: ''
-    label1: ''
-    label10: ''
-    label2: ''
-    label3: ''
-    label4: ''
-    label5: ''
-    label6: ''
-    label7: ''
-    label8: ''
-    label9: ''
-    mult: '[]'
-    name: '""'
-    ncols: '256'
-    nconnections: '1'
-    nrows: '256'
-    offset: '[]'
-    samp_rate: samp_rate
-    type: float
-    update_time: '0.10'
-    x_end_value: '0.0'
-    x_label: '""'
-    x_start_value: '0.0'
-    y_end_value: '0.0'
-    y_label: '""'
-    y_start_value: '0.0'
-    zmax: '1'
-    zmin: '-1'
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1312, 956.0]
-    rotation: 0
-    state: disabled
 - name: qtgui_time_sink_x_0_0
   id: qtgui_time_sink_x
   parameters:
@@ -459,7 +315,7 @@ blocks:
     marker9: '-1'
     name: '"Time Domain Representation of the Signal"'
     nconnections: '1'
-    size: '512'
+    size: '10000'
     srate: samp_rate
     stemplot: 'False'
     style1: '1'
@@ -501,75 +357,11 @@ blocks:
     coordinate: [904, 196.0]
     rotation: 0
     state: enabled
-- name: qtgui_waterfall_sink_x_0
-  id: qtgui_waterfall_sink_x
-  parameters:
-    affinity: ''
-    alias: ''
-    alpha1: '1.0'
-    alpha10: '1.0'
-    alpha2: '1.0'
-    alpha3: '1.0'
-    alpha4: '1.0'
-    alpha5: '1.0'
-    alpha6: '1.0'
-    alpha7: '1.0'
-    alpha8: '1.0'
-    alpha9: '1.0'
-    axislabels: 'True'
-    bw: '1500'
-    color1: '0'
-    color10: '0'
-    color2: '0'
-    color3: '0'
-    color4: '0'
-    color5: '0'
-    color6: '0'
-    color7: '0'
-    color8: '0'
-    color9: '0'
-    comment: ''
-    fc: '0'
-    fftsize: '512'
-    freqhalf: 'True'
-    grid: 'False'
-    gui_hint: ''
-    int_max: '10'
-    int_min: '-140'
-    label1: ''
-    label10: ''
-    label2: ''
-    label3: ''
-    label4: ''
-    label5: ''
-    label6: ''
-    label7: ''
-    label8: ''
-    label9: ''
-    legend: 'True'
-    maxoutbuf: '0'
-    minoutbuf: '0'
-    name: '""'
-    nconnections: '1'
-    showports: 'False'
-    type: complex
-    update_time: '0.10'
-    wintype: window.WIN_BLACKMAN_hARRIS
-  states:
-    bus_sink: false
-    bus_source: false
-    bus_structure: null
-    coordinate: [1248, 1092.0]
-    rotation: 0
-    state: disabled
 
 connections:
 - [analog_sig_source_x_0_2, '0', blocks_complex_to_float_0, '0']
 - [analog_sig_source_x_0_2, '0', qtgui_const_sink_x_1, '0']
-- [analog_sig_source_x_0_2_0, '0', blocks_complex_to_float_0_0, '0']
-- [analog_sig_source_x_0_2_0, '0', qtgui_waterfall_sink_x_0, '0']
 - [blocks_complex_to_float_0, '0', qtgui_time_sink_x_0_0, '0']
-- [blocks_complex_to_float_0_0, '0', qtgui_time_raster_sink_x_0, '0']
 
 metadata:
   file_format: 1
